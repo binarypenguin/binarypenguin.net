@@ -4,9 +4,12 @@
 @import url(//fonts.googleapis.com/css?family=Titan+One);
 
 body {
-	/* font-family: 'Titan One', cursive; */
 	background-color: #FFF;
 	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Titan One', cursive;
 }
 
 .logo { margin-top: 50px; }
@@ -34,4 +37,5 @@ a:active {color: #ff9955;} /* selected link */
     padding-bottom:0 !important;
     height: 28px;
 }
+
 .navbar {min-height:28px !important; }

@@ -9,16 +9,31 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://binarypenguin.net">{{ site.title }}</a>
+                <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
               </div>
               <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                  {% for domain in site.data.domains %}
+                  {% for nav in site.data.nav %}
                     <li>
-                      <a href="{{ domain.url }}" {% if domain.description %} title="{{ domain.description }}" {% endif %} >{{ domain.title }}</a>
+                      <a href="{{ nav.url }}" {% if nav.description %} title="{{ nav.description }}" {% endif %} >{{ nav.title }}</a>
                     </li>
                   {% endfor %}
                 </ul>
+                {% if site.data.domains | sort: 'title' %}
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Domains <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      {% assign domains = site.data.domains | sort: 'title' %}
+                      {% for domain in domains %}
+                        <li>
+                          <a href="{{ domain.url }}" {% if domain.description %} title="{{ domain.description }}" {% endif %} >{{ domain.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                </ul>
+                {% endif %}
               </div><!--/.nav-collapse -->
             </div>
           </nav>
