@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /literal/
+
+User-agent: *
+Disallow: /system/
