@@ -2,6 +2,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "bundler"
 gem "jekyll"
 gem "html-proofer"
