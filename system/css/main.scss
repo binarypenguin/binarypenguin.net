@@ -23,3 +23,9 @@ a:active {color: #ff9955;} /* selected link */
 .menu-item:visited {color: #333;} /* visited link */
 .menu-item:hover {color: #ff9955;} /* mouse over link */
 .menu-item:active {color: #333;} /* selected link */
+
+.logo {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
