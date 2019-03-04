@@ -6,13 +6,13 @@
 body {
 	background-color: #FFF;
 	color: #333;
+  padding-top: 3.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Titan One', cursive;
 }
 
-.logo { margin-top: 50px; }
 
 a:link {color: #ff9955;} /* unvisited link */
 a:visited {color: #ff9955;} /* visited link */
@@ -23,19 +23,3 @@ a:active {color: #ff9955;} /* selected link */
 .menu-item:visited {color: #333;} /* visited link */
 .menu-item:hover {color: #ff9955;} /* mouse over link */
 .menu-item:active {color: #333;} /* selected link */
-
-.digitalocean {
-	height: 50px;
-}
-
-.main-icons {
-	font-size: 6em;
-}
-
-.navbar-nav > li > a, .navbar-brand {
-    padding-top:4px !important;
-    padding-bottom:0 !important;
-    height: 28px;
-}
-
-.navbar {min-height:28px !important; }

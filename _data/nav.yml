@@ -1,8 +1,11 @@
 - title: Mail
-  url: http://mail.binarypenguin.net
+  url: https://binarypenguin.awsapps.com/mail
+  icon: far fa-envelope
 
 - title: Slack
   url: https://binarypenguin.slack.com
+  icon: fab fa-slack
 
 - title: Github
   url: https://github.com/binarypenguin
+  icon: fab fa-github

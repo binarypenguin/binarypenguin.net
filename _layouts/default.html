@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <img class='logo center-block' type="image/svg+xml" src="/system/imgs/penguin.svg" />
+          </div>
+        </div>
       </div>
+      {{ content }}
     </div>
-
     {% include footer.html %}
-
-  </body>
-
+   </body>
 </html>
