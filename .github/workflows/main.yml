@@ -1,10 +1,7 @@
-name: Jekyll site CI
-
+name: Binary Penguin Networks Docker Container
 on:
   push:
-    branches: [ "master", "tjbenator-github-actions" ]
-  pull_request:
-    branches: [ "master", "tjbenator-github-actions" ]
+    branches: [ "release" ]
   workflow_dispatch:
 
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
@@ -38,6 +35,7 @@ jobs:
           path: _site
   build-and-push-image:
     runs-on: ubuntu-latest
+    needs: build-jekyll
     permissions:
       contents: read
       packages: write
