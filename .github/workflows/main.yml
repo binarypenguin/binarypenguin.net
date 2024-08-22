@@ -27,7 +27,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v4
         with:
           name: site
           path: _site
@@ -40,6 +40,9 @@ jobs:
         with:
           name: site
           path: _site
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
