@@ -46,8 +46,9 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          image: binarypenguin-net
+          registry: ghcr.io
           context: .
           push: true
-          tags: binarypenguin/binarypenguin-net:latest
 
 
