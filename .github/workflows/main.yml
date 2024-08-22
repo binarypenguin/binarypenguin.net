@@ -36,6 +36,8 @@ jobs:
     needs: build-jekyll
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
       - uses: actions/download-artifact@master
         with:
           name: site
