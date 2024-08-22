@@ -48,7 +48,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          tags: binarypenguin.net/binarypenguin-net
+          tags: binarypenguin/binarypenguin-net
           context: .
           push: true
 
