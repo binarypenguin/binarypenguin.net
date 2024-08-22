@@ -24,6 +24,9 @@ jobs:
         run: bundle exec jekyll build --baseurl "binarypenguin.net"
         env:
           JEKYLL_ENV: production
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
   build-docker:
     runs-on: ubuntu-latest
     needs: build-jekyll
