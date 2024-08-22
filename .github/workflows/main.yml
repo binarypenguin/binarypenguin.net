@@ -2,9 +2,9 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "tjbenator-github-actions" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "tjbenator-github-actions" ]
   workflow_dispatch:
 
 jobs:
