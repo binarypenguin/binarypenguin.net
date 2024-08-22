@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-jekyll:
+  build-docker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -27,10 +27,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-  build-docker:
-    runs-on: ubuntu-latest
-    needs: build-jekyll
-    steps:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
